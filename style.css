@@ -35,3 +35,32 @@ button {
 button:hover {
   background-color: #1d4ed8;
 }
+
+/* Task list styling */
+#taskList {
+  list-style: none;
+  padding: 0;
+  width: 300px;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+#taskList li span {
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+/* Completed tasks */
+#taskList li.completed span {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
